@@ -9,6 +9,8 @@ class TitleScene extends Phaser.Scene{
         this.load.image('mouse','assets/mouse.png');
         this.load.image('title','assets/telaInicio.png');
         this.load.image('play','assets/play.png');
+        this.load.image('mouse1','assets/pixil-frame-0 (2).png');
+        this.load.image('mouse2','assets/pixil-frame-0 (4).png');
     }
     create(){
         //tela de titulo
@@ -20,7 +22,9 @@ class TitleScene extends Phaser.Scene{
             this.scene.start('Cutscenes');
         })
         //cursor do mouse
-        this.mouse = this.add.image(480,240,'mouse').setScale(0.1).setOrigin(0.15,0.05);
+        //this.mouse = this.add.image(480,240,'mouse').setScale(0.1).setOrigin(0.15,0.05);
+        // this.mouse = this.add.image(480,240,'mouse1').setScale(0.01).setOrigin(0.5,0.05);
+        this.mouse = this.add.image(480,240,'mouse2').setScale(0.015).setOrigin(0.425,0.43);
         this.input.setDefaultCursor('none');
     }
     update(){
