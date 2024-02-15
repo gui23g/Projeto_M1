@@ -23,7 +23,7 @@ class TitleScene extends Phaser.Scene{
         })
         //cursor do mouse
         //this.mouse = this.add.image(480,240,'mouse').setScale(0.1).setOrigin(0.15,0.05);
-        // this.mouse = this.add.image(480,240,'mouse1').setScale(0.01).setOrigin(0.5,0.05);
+        //this.mouse = this.add.image(480,240,'mouse1').setScale(0.01).setOrigin(0.5,0.05);
         this.mouse = this.add.image(480,240,'mouse2').setScale(0.015).setOrigin(0.425,0.43);
         this.input.setDefaultCursor('none');
     }
